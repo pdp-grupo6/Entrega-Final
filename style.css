@@ -5,11 +5,11 @@ Lo primero es definir tres colores, los que deberían coincidir con los utilizad
 ------------------------------------------------------------------------------------------------- */
 
 :root {
-  --primercolor: #222; 
-  --segundocolor: #666; /* menos luminoso */
-  --tercercolor: #aaa; /* más luminoso */
-  --colorclaro: rgba(255,255,255,0.8);
-  --coloroscuro: rgba(0,0,0,0.8);
+  --primercolor: #1c312f; 
+  --segundocolor: #bed2cd; /* menos luminoso */
+  --tercercolor: #e9f0f2; /* más luminoso */
+  --colorclaro: rgba(0,0,0,0.8) ;
+  --coloroscuro: rgba(255,255,255,0.8);
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
@@ -61,23 +61,23 @@ De tal manera podría "fundirse" con el color de fondo, ofreciendo continuidad, 
 
 header{
     background-color:var(--segundocolor);
-    background-image:url('img/wireframe-aspect_ratio-1-1.png');
-    background-position: center top;
+    background-image:url('img/header1.jpg');
+    background-position: center down;
     background-repeat: no-repeat;
     background-size:100% auto;
-    color:var(--colorclaro);
+    color:var(--primercolor);
 }
 
 @media (min-width: 576px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-4-3.png');}
+    header{background-image:url('img/header1.jpeg');}
 }
 
 @media (min-width: 768px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-16-9.png');}
+    header{background-image:url('img/header2.jpeg');}
 }
 
 @media (min-width: 992px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-2.75-1.png');}
+    header{background-image:url('img/header3.jpeg');}
 }
 
 
@@ -96,7 +96,7 @@ Con tales colores, la imagen sirve de transición a la parte que ofrece más inf
 ------------------------------------------------------------------------------------------------- */
 
 main{
-    background-image:url('img/wireframe-aspect_ratio-4-1.png');
+    background-image:url('img/fondo_bosque.jpg');
     background-position: left bottom;
     background-repeat: repeat-x;
     background-size:100% auto;
@@ -107,17 +107,17 @@ main{
 }
 
 aside{
-    background:var(--tercercolor);
+    background:var(--primercolor);
     color:var(--coloroscuro);
 }
 
 footer{
-    color:var(--segundcolor);
+    color:var(--segundocolor);
 }
 
 footer a{
     text-decoration: none;
-    color:var(--segundcolor);
+    color:var(--primercolor);
 }
 
 footer a:hover{
